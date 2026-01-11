@@ -46,7 +46,7 @@ jobs:
           # 使用自定义的 GH_TOKEN（而非默认的 GITHUB_TOKEN）
           github_token: ${{ secrets.GH_TOKEN }}
           # VitePress 构建输出目录（必须和你项目的输出路径一致）
-          publish_dir: ./.vitepress/dist # 构建产物目录
+          publish_dir: .vitepress/dist # 构建产物目录
           # 强制覆盖 gh-pages 分支（避免 non-fast-forward 错误）
           force_orphan: true
           # 可选：设置提交信息
