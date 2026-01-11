@@ -2,7 +2,6 @@ name: 部署 VitePress 到 GitHub Pages
 on:
   push:
     branches: [ main ] # 推送到 main 分支时自动部署（你的主分支是 master 就改 master）
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
