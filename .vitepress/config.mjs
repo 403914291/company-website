@@ -9,7 +9,7 @@ const baseConfig = defineConfig({
   lang: 'zh-CN',
     // 核心配置：控制主题切换按钮
   appearance: false, // true=显示切换按钮；false=隐藏；'dark'=默认深色模式（仍可切换）
-
+  base: '/',
   // 主题配置
   themeConfig: {
     // 网站logo
