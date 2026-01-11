@@ -1,23 +1,53 @@
-name: Deploy GitHub Pages
+name: Deploy VitePress to GitHub Pages
+
 on:
+  # 推送到 main 分支时触发部署
   push:
-    branches: [main] # 主分支推送时自动触发
+    branches: [main]
+  # 允许手动触发部署
+  workflow_dispatch:
+
+# 赋予 workflow 必要的权限
+permissions:
+  contents: write  # 允许读写仓库内容（关键）
+  pages: write     # 允许操作 GitHub Pages
+  id-token: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      # 1. 拉取仓库代码（fetch-depth: 0 避免版本冲突）
+      - name: Checkout code
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v4
+          # 若有子模块，需添加：submodules: true
+
+      # 2. 配置 Node 环境（匹配你的 Node v24.11.1）
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: 18 # 匹配你的本地Node版本
-          cache: 'npm'
-      - run: npm install
-      - run: npm run build
-      - name: Deploy
+          node-version: 24.11.1
+          cache: 'npm'  # 缓存 npm 依赖，加速构建
+
+      # 3. 安装依赖
+      - name: Install dependencies
+        run: npm install
+
+      # 4. 构建 VitePress 项目
+      - name: Build VitePress site
+        run: npm run build
+
+      # 5. 部署到 gh-pages 分支（核心步骤）
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # 使用自定义的 GH_TOKEN（而非默认的 GITHUB_TOKEN）
+          github_token: ${{ secrets.GH_TOKEN }}
+          # VitePress 构建输出目录（必须和你项目的输出路径一致）
           publish_dir: ./.vitepress/dist # 构建产物目录
+          # 强制覆盖 gh-pages 分支（避免 non-fast-forward 错误）
+          force_orphan: true
+          # 可选：设置提交信息
+          commit_message: 'chore: deploy VitePress site'
