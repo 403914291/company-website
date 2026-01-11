@@ -26,5 +26,5 @@ jobs:
       - name: 部署到 Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.DEPLOY_TOKE }}
           publish_dir: ./.vitepress/dist # 重点：VitePress 构建后的目录（适配你的项目结构）
