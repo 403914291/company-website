@@ -15,7 +15,7 @@ jobs:
           node-version: 18 # 匹配你的本地Node版本
           cache: 'npm'
       - run: npm install
-      - run: npm run docs:build
+      - run: npm run build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
