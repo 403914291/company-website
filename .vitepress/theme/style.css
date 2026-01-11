@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 自定义基础样式 */
+:root {
+  --vp-c-brand: #2563eb;
+  --vp-c-brand-light: #60a5fa;
+  --vp-c-brand-lighter: #bfdbfe;
+  --vp-c-brand-dark: #1d4ed8;
+  --vp-c-brand-darker: #1e3a8a;
+  /* 全局背景保留，但不覆盖hero的默认渐变 */
+ 
+}
+/* 隐藏这个自定义的主题切换按钮 */
+.nav-bar .theme-toggle-button {
+  display: none !important;
+}
+/* 恢复hero区域的默认光韵（渐变背景） */
+.VPHomeHero {
+  background: var(--vp-home-hero-bg) !important; /* 强制使用VitePress默认渐变背景 */
+  padding: 2rem 0; /* 保留你的内边距，不影响光韵 */
+}
+
+/* 确保image不被覆盖，保留默认背景 */
+.VPHomeHero .VPImage {
+  background-color: initial !important;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .vp-doc h1 {
+    font-size: 2rem !important;
+  }
+}
+
+/* 自定义组件样式 */
+.btn-primary {
+  @apply bg-primary-600 text-white px-6 py-3 rounded-lg font-medium
+         hover:bg-primary-700 transition-colors duration-200
+         focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+}
+
+.card {
+  @apply bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6
+         border border-gray-200 dark:border-gray-700
+         transition-all duration-300 hover:shadow-xl;
+}
