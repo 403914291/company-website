@@ -67,7 +67,7 @@ const baseConfig = defineConfig({
     
     // 社交链接
     socialLinks: [
-      { icon: 'github', link: 'https://github.com' },
+      { icon: 'github', link: 'https://github.com/403914291?tab=repositories' },
       // { icon: 'twitter', link: 'https://twitter.com' },
       // { icon: 'linkedin', link: 'https://linkedin.com' }
     ],
