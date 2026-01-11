@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.BXRTmGgs.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"blog/new-1.md","filePath":"blog/new-1.md","lastUpdated":1768109552000}'),o={name:"blog/new-1.md"};function n(r,s,c,d,p,l){return a(),t("div")}const m=e(o,[["render",n]]);export{i as __pageData,m as default};
