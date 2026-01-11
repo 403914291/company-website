@@ -10,6 +10,7 @@ const baseConfig = defineConfig({
     // 核心配置：控制主题切换按钮
   appearance: false, // true=显示切换按钮；false=隐藏；'dark'=默认深色模式（仍可切换）
   base: '/',
+
   // 主题配置
   themeConfig: {
     // 网站logo
@@ -130,6 +131,9 @@ const baseConfig = defineConfig({
     },
     lineNumbers: true
   },
+
+
+  
   
   // Vite配置
   vite: {
@@ -140,6 +144,25 @@ const baseConfig = defineConfig({
       alias: {
         '@utils': '/.vitepress/theme/utils'
       }
+    },
+    server: {
+      // 1. 强制指定模块脚本的 MIME 类型
+      mimeTypes: {
+        '.js': 'text/javascript',   // 普通 JS 模块
+        '.mjs': 'text/javascript',  // MJS 模块
+        '.cjs': 'text/javascript'   // 兼容 CommonJS
+      },
+      // 2. 放行 public 目录下的所有文件请求，不经过 VitePress 路由
+      fs: {
+        allow: ['..']  // 允许访问项目根目录（包含 public 目录）
+      },
+      // 3. 禁用模块预加载干扰（避免 VitePress 篡改模块请求）
+      preTransformRequests: false
+    },
+    // 4. 构建时保留模块脚本的原始格式
+    build: {
+      preserveEntrySignatures: 'strict',
+      copyPublicDir: true  // 确保 public 目录文件原样复制
     }
   }
 });
