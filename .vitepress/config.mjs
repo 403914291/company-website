@@ -114,7 +114,7 @@ const baseConfig = defineConfig({
   ],
   
   // 构建输出
-  outDir: '../dist',
+  // outDir: '../dist',
   
   // 最后更新时间
   lastUpdated: true,
