@@ -10,7 +10,6 @@ description: 获取我们的联系方式和位置信息
 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 my-12">
   <div>
     <h2 class="text-2xl font-bold mb-6">联系方式</h2>
-    
     <div class="space-y-6">
       <div class="flex items-start space-x-4">
         <div class="bg-primary-100 dark:bg-primary-900 p-3 rounded-lg">
@@ -24,7 +23,6 @@ description: 获取我们的联系方式和位置信息
           </p>
         </div>
       </div>
-      
       <div class="flex items-start space-x-4">
         <div class="bg-primary-100 dark:bg-primary-900 p-3 rounded-lg">
           <span class="text-primary-600 dark:text-primary-400">📞</span>
@@ -37,7 +35,6 @@ description: 获取我们的联系方式和位置信息
           </p>
         </div>
       </div>
-      
       <div class="flex items-start space-x-4">
         <div class="bg-primary-100 dark:bg-primary-900 p-3 rounded-lg">
           <span class="text-primary-600 dark:text-primary-400">✉️</span>
@@ -56,7 +53,7 @@ description: 获取我们的联系方式和位置信息
   <div>
     <h2 class="text-2xl font-bold mb-6">在线留言</h2>
     
-    <ContactForm />
+ 
   </div>
 </div>
 
@@ -80,6 +77,6 @@ description: 获取我们的联系方式和位置信息
 
 对于商务合作、媒体采访等事宜，请联系：
 
-**商务合作：** business@company.com  
-**媒体联系：** media@company.com  
-**人才招聘：** hr@company.com
+**商务合作：** 403914291@qq.com  
+**媒体联系：** 403914291@qq.com  
+**人才招聘：** 403914291@qq.com  
