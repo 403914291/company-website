@@ -86,7 +86,7 @@ const baseConfig = defineConfig({
     },
     
     // 暗色模式切换
-    // darkModeSwitchLabel: '主题',
+    darkModeSwitchLabel: '主题',
     
     // 返回顶部按钮
     returnToTopLabel: '返回顶部',
@@ -132,10 +132,7 @@ const baseConfig = defineConfig({
     },
     lineNumbers: true
   },
-
-
-  
-  
+ 
   // Vite配置
   vite: {
     css: {
