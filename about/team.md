@@ -12,7 +12,7 @@ description: 认识我们的专业团队
     <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-4xl">
       👨‍💼
     </div>
-    <h3 class="text-xl font-bold mb-2">张明</h3>
+    <h3 class="text-xl font-bold mb-2">李乾坤</h3>
     <p class="text-primary-600 dark:text-primary-400 font-medium mb-2">首席执行官</p>
     <p class="text-gray-600 dark:text-gray-400 text-sm">
       15年互联网行业经验，曾任职于多家知名科技公司
@@ -34,7 +34,7 @@ description: 认识我们的专业团队
     <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-4xl">
       👨‍💻
     </div>
-    <h3 class="text-xl font-bold mb-2">王强</h3>
+    <h3 class="text-xl font-bold mb-2">李乾坤</h3>
     <p class="text-primary-600 dark:text-primary-400 font-medium mb-2">产品总监</p>
     <p class="text-gray-600 dark:text-gray-400 text-sm">
       用户体验专家，主导多个百万级用户产品
