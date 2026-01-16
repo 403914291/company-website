@@ -18,7 +18,7 @@ description: 获取我们的联系方式和位置信息
         <div>
           <h3 class="font-bold text-lg">地址</h3>
           <p class="text-gray-600 dark:text-gray-400">
-            北京市朝阳区XXX街道XX号<br>
+            北京市朝阳区<br>
             邮编：100000
           </p>
         </div>
@@ -30,7 +30,7 @@ description: 获取我们的联系方式和位置信息
         <div>
           <h3 class="font-bold text-lg">电话</h3>
           <p class="text-gray-600 dark:text-gray-400">
-            400-XXX-XXXX<br>
+           在线客服<br>
             工作日 9:00-18:00
           </p>
         </div>
@@ -42,8 +42,8 @@ description: 获取我们的联系方式和位置信息
         <div>
           <h3 class="font-bold text-lg">邮箱</h3>
           <p class="text-gray-600 dark:text-gray-400">
-            contact@company.com<br>
-            sales@company.com
+            83110561@qq.com<br>
+            83110561@qq.com
           </p>
         </div>
       </div>
@@ -61,8 +61,8 @@ description: 获取我们的联系方式和位置信息
 
 <div class="my-12">
   <h2 class="text-2xl font-bold mb-6">我们的位置</h2>
-  
-  <div class="bg-gray-100 dark:bg-gray-800 rounded-xl p-8 text-center">
+   <img src="/images/map.png" />
+  <!-- <div class="bg-gray-100 dark:bg-gray-800 rounded-xl p-8 text-center">
     <div class="text-5xl mb-4">🗺️</div>
     <p class="text-gray-600 dark:text-gray-400 mb-4">
       地图组件需要集成百度地图或高德地图API
@@ -70,13 +70,13 @@ description: 获取我们的联系方式和位置信息
     <p class="text-sm text-gray-500">
       实际部署时请替换为真实的地图嵌入代码
     </p>
-  </div>
+  </div> -->
 </div>
 
 ## 商务合作
 
 对于商务合作、媒体采访等事宜，请联系：
 
-**商务合作：** 403914291@qq.com  
-**媒体联系：** 403914291@qq.com  
-**人才招聘：** 403914291@qq.com  
+**商务合作：** 83110561@qq.com  
+**媒体联系：** 83110561@qq.com  
+**人才招聘：** 83110561@qq.com  

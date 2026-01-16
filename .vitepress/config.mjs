@@ -19,14 +19,14 @@ const baseConfig = defineConfig({
     // 导航栏
     nav: [
       { text: '首页', link: '/' },
-      { text: '新闻动态', link: '/news-list' },
+      // { text: '新闻动态', link: '/news-list' },
       { 
         text: '产品服务', 
         items: [
           { text: '服务概览', link: '/services/' },
-          { text: '音乐转换产品一', link: '/services/service-1' },
+          { text: '音乐格式转换', link: '/services/service-1' },
         
-          { text: '影视软件产品', link: '/services/service-2' },
+          { text: '音乐软件下载', link: '/services/service-2' },
           { text: '视频编辑工具', link: '/services/service-3' }
         ]
       }, 
